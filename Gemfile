@@ -6,7 +6,6 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
 
-group :jekyll_plugins do
-  gem 'octopress-video-tag'
-end
+gem 'github-pages', group: :jekyll_plugins
+
 
