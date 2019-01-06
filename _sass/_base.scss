@@ -155,9 +155,12 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
+    background-image: url('../img/workaholic/workaholic.jpg');
+    video {
+        display: none;
+    }
     .header-content {
         position: relative;
         text-align: center;
@@ -169,6 +172,7 @@ header {
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
+                background: rgba(44,44,44, 0.4);
             }
             hr {
                 margin: 30px auto;
@@ -182,6 +186,9 @@ header {
         }
     }
     @media (min-width: 768px) {
+        video {
+            display: block;
+        }
         min-height: 100%;
         .header-content {
             position: absolute;
@@ -287,6 +294,14 @@ header {
 // Bootstrap Overrides
 .text-primary {
     color: $theme-primary;
+}
+
+.bolt-yellow {
+    color: #FDD023;
+}
+
+.money-green {
+    color: #85bb65 ;
 }
 
 .no-gutter > [class*='col-'] {
