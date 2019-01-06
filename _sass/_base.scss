@@ -335,6 +335,11 @@ header {
     color: $theme-dark;
     font-size: 4em;
 }
+#mc_embed_signup_scroll {
+    input {
+        color: $theme-dark;
+    }
+}
 
 // Extras
 // -- Highlight Color Customization
